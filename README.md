@@ -18,21 +18,22 @@
 	```
 	android {
     
-	    defaultConfig {
+	     defaultConfig {
    		   ....
-         externalNativeBuild {
-           cmake {
+           externalNativeBuild {
+               cmake {
              		   cppFlags "-fopenmp"
 		             cFlags "-fopenmp"
-          	  }
-       	 }
-   		}
+          	   }
+       	   }
+       	   ....
+   		 }
     
-       externalNativeBuild {
-       	 cmake {
+         externalNativeBuild {
+       	    cmake {
    			         path "CMakeLists.txt"
 	        }
-    	}
+    	 }
 	}
 	```  
 	
